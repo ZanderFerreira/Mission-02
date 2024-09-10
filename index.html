@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Memories</title>
+    <script src="mis-02.js" defer></script>
+    <link rel="stylesheet" href="mis-02.css">
+</head>
+
+
+
+<body>
+    <header>
+    <div class="off-screen-menu">
+    
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Packages and pricing</a></li>
+        </ul>
+    </div>
+    
+    <nav>
+        <img src="LOGO.png" alt="" class="logo">
+        
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="Image1.jpg" alt="image #1">
+            <img class="slide" src="image2.jpg" alt="image #2">
+            <img class="slide" src="image3.jpg" alt="image #3">
+            <img class="slide" src="Image4.jpg" alt="image #4">
+            <img class="slide" src="Image5.jpg" alt="image #5">
+            <img class="slide" src="image 6.jpg" alt="image #6">
+        </div>
+        <button class="previous" onclick="prevSlide()" >&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+
+    </div>
+
+
+    <footer>
+        <script>
+            for (let i = 3; i > 0; i--) {
+                    document.write(i+"....");
+                }
+        </script>
+        <h5>Say Cheese!!</h5>
+    
+    </footer>
+
+    
+</body>
+</html>
