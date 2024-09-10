@@ -2,7 +2,9 @@
 
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
-let intervalId = null;
+// let intervalId = null;
+
+//++++++++Start slideshow and parameters for timer
 
 //initializeSlider()
 document.addEventListener("DOMContentLoaded", initializeSlider)
@@ -14,7 +16,7 @@ function initializeSlider() {
         intervalId = setInterval(nextSlide, 5000);
     } 
 }
-
+//+++++Changing between slides
 function showSlide(index) {
 
     if (index >= slides.length) {
@@ -30,7 +32,7 @@ function showSlide(index) {
     slides[slideIndex].classList.add("displaySlide");
 };
 
-
+//++++++++Buttons++++++++
 function prevSlide() { 
     clearInterval(intervalId)
     slideIndex--;
@@ -42,7 +44,7 @@ function nextSlide() {
     showSlide(slideIndex);
 }
 
-
+//++++++++Ham Menu++++++++++
 const hamMenu = document.querySelector(".ham-menu");
 
 const offScreenMenu = document.querySelector(".off-screen-menu");
